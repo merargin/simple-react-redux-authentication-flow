@@ -5,7 +5,7 @@ var config = require('./webpack.config');
 
 var app = express();
 var compiler = webpack(config);
-
+const port = process.env.PORT || 8001;
 
 console.log(' publicPath ', config.output.publicPath);
 
@@ -32,12 +32,5 @@ app.get('/public/bundle.js', function(req, res) {
   res.sendFile(path.join(__dirname, '/public/bundle.js'));
 });
 
-app.listen(process.env.PORT || 8001, 'localhost', function(err) {
-  if (err) {
-    console.log(err);
-    return;
-  }
-
-  console.log('Listening at http://localhost:8001');
-});
+app.listen(port);
 
