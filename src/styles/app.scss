@@ -1,0 +1,62 @@
+//colors
+$alabaster: #fafafa;
+
+button {
+	cursor: pointer;
+}
+input[type=submit] {
+	cursor: pointer;
+}
+.Absolute-Center {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	&.is-Responsive {
+		width: 50%;
+		height: 50%;
+		min-width: 200px;
+		max-width: 400px;
+		padding: 40px;
+	}
+}
+.records {
+	position: absolute;
+	width: 85%;
+	left: 6%;
+}
+.record-list {
+	margin-top: 20px;
+	background-color: : '$alabaster';
+	padding: 10px;
+}
+.logout-button {
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+.records-container {
+	position: absolute;
+	top: 35px;
+}
+.audio {
+	width: 100%;
+}
+.rating {
+	unicode-bidi: bidi-override;
+	direction: ltr;
+	> span {
+		display: inline-block;
+		position: relative;
+		width: 1.1em;
+		&.star:before {
+			content: "\2605";
+			position: absolute;
+		}
+	}
+}
+div.well {
+	height: 250px;
+}

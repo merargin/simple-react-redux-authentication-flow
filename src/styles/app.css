@@ -1,0 +1,56 @@
+div.well{
+  height: 250px;
+}
+button, input[type=submit]{
+  cursor: pointer;
+}
+
+.Absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+.records{
+  position: absolute;
+  width: 85%;
+  left: 6%;
+}
+
+.Absolute-Center.is-Responsive {
+  width: 50%;
+  height: 50%;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 40px;
+}
+
+.record-list{
+  margin-top: 20px;
+  background-color: : '#fafafa';
+  padding: 10px;
+}
+.logout-button{
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+.records-container{
+  position: absolute;
+  top: 35px;
+}
+.audio{
+  width: 100%;
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: ltr;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span.star:before {
+   content: "\2605";
+   position: absolute;
+}
