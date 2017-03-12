@@ -32,7 +32,7 @@ app.get('/public/bundle.js', function(req, res) {
   res.sendFile(path.join(__dirname, '/public/bundle.js'));
 });
 
-app.listen(8001, 'localhost', function(err) {
+app.listen(process.env.PORT || 8001, 'localhost', function(err) {
   if (err) {
     console.log(err);
     return;
